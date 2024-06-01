@@ -21,16 +21,6 @@ Here's how to run the demo using your webcam.
 python app.py
 ```
 
-The following options can be specified when running the demo.
-* --device<br>Specifying the camera device number (Default：0)
-* --width<br>Width at the time of camera capture (Default：960)
-* --height<br>Height at the time of camera capture (Default：540)
-* --use_static_image_mode<br>Whether to use static_image_mode option for MediaPipe inference (Default：Unspecified)
-* --min_detection_confidence<br>
-Detection confidence threshold (Default：0.5)
-* --min_tracking_confidence<br>
-Tracking confidence threshold (Default：0.5)
-
 # Directory
 <pre>
 │  app.py
@@ -74,15 +64,7 @@ The following files are stored.
 * Label data(keypoint_classifier_label.csv)
 * Inference module(keypoint_classifier.py)
 
-### model/point_history_classifier
-This directory stores files related to finger gesture recognition.<br>
-The following files are stored.
-* Training data(point_history.csv)
-* Trained model(point_history_classifier.tflite)
-* Label data(point_history_classifier_label.csv)
-* Inference module(point_history_classifier.py)
-
+## Different modes in app.py 
+* Press 1 to enter logging mode which generates the training data for training the model. This appends the training data to 'keypoint.csv' file.
+* 
  
-# License 
-hand-gesture-recognition-using-mediapipe is under [Apache v2 license](LICENSE).
-# handGesture
